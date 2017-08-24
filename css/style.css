@@ -1,0 +1,18 @@
+body {
+  background: black; }
+
+.container-fluid {
+  background-color: black; }
+  .container-fluid ::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+#grid[data-columns]::before {
+  content: '3 .column.size-1of3'; }
+
+.column {
+  float: left; }
+
+.size-1of3 {
+  width: 33.333%; }
